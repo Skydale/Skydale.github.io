@@ -1,0 +1,118 @@
+body {
+    margin: 0
+}
+
+#desc {
+    position: relative;
+    background-color: #4C4D4F;
+    top: 40px;
+    height: 320px;
+    width: 100%;
+}
+
+#descText {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    margin: 2.5% auto auto 20%;
+    border: 10px solid transparent;
+    font: normal normal 400 normal 16px 'Noto Serif TC', serif;
+    left: -50%;
+    transition: left 0.7s;
+    transition-timing-function: ease-out;
+}
+
+#descLogo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto 30px;
+    height: 256px;
+    width: 256px;
+    left: -50%;
+    transition: left 0.7s;
+    transition-timing-function: ease-out;
+}
+
+#discord {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #99AAB5;
+    top: 40px;
+    height: 320px;
+    width: 100%;
+}
+
+#discordInviteBox {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    margin: auto 17% auto auto;
+    transition: right 0.7s;
+    transition-timing-function: ease-out;
+}
+
+#discordLogo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -50%;
+    transition: right 0.7s;
+    transition-timing-function: ease-out;
+}
+
+#display {
+    position: relative;
+    background-color: #C25B8A;
+    width: 100%;
+}
+
+#displayText {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #111;
+    top: 20px;
+    height: 100px;
+    font: normal normal 400 normal 20px 'Noto Sans TC', sans-serif;
+}
+
+#display img {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#topBar {
+    z-index: 100;
+    position: fixed;
+    background-color: #C5E2FC;
+    display: flex;
+    width: 100%;
+}
+
+#topBar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-left: 5%;
+    border: 10px solid transparent;
+    font: normal normal 400 normal 20px 'Noto Sans TC',sans-serif,Arial;
+}
+
+#topBar a:link, #topBar a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#topBar a:hover {
+    color: #888;
+}

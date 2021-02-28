@@ -1,7 +1,59 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <title>Skydale</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./logo_crystal.png" />
+  <link rel="stylesheet" href="./discordInvite.css" />
+  <link rel="stylesheet" href="./topBar.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <script src="./discordInvite.js" charset="utf-8"></script>
+  <script>
+    discordInvite.init({
+      inviteCode: '5vwGqnNjYy',
+      title: "凌空群島 / Skydale",
+      introText: "加入我們的 Discord 群組！",
+      joinText: "加入",
+      joinedText: "已加入"
+    });
+    discordInvite.render();
+  </script>
+  <nav id="topBar">
+    <a href="https://github.com/Skydale">Github 頁面</a>
+  </nav>
+  <script>
+    window.onload = function () {
+      document.getElementById("descLogo").style.left = 0;
+      document.getElementById("descText").style.left = 0;
+      document.getElementById("discordLogo").style.right = 0;
+      document.getElementById("discordInviteBox").style.right = 0;
+    }
+  </script>
+  <div id="desc">
+    <img id="descLogo" src="logo_transparent.png">
+    <div id="descText">
+      <h1>~ 凌空群島 Skydale ~</h1>
+      <h2>一個透明公開的<br>「開放式 RPG」伺服器</h2>
+    </div>
+  </div>
+  <div id="discord">
+    <img id="discordLogo" src="discord.png">
+    <div id="discordInviteBox"></div>
+  </div>
+  <div id="display">
+    <div id="displayText">
+      <h1>成果展示區</h1>
+    </div>
+    <img src="https://media.discordapp.net/attachments/797083412719861792/806835943511425054/demo-min.gif">
+    <img src="https://cdn.discordapp.com/attachments/797083412719861792/810771590962872330/a.gif">
+    <br><br><br>
+  </div>
 </body>
+
 </html>
