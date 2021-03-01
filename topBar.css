@@ -58,9 +58,11 @@ body {
 
 #discordLogo {
     position: absolute;
+    width: 75%;
+    height: 75%;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto -30% auto auto;
     right: -50%;
     transition: right 0.7s;
     transition-timing-function: ease-out;
