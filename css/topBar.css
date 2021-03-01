@@ -98,7 +98,8 @@ body {
 
 #displayText {
     text-align: center;
-    vertical-align: middle;
+    top: 50%;
+    position: relative;
     text-decoration: none;
     color: #111;
     top: 20px;
@@ -106,7 +107,7 @@ body {
     font: normal normal 400 normal 20px 'Noto Sans TC', sans-serif;
 }
 
-#topBar a {
+#topNavBar .navBarButton {
     text-align: center;
     text-decoration: none;
     color: #000;
@@ -115,16 +116,15 @@ body {
     font: normal normal 400 normal 21px 'Noto Sans TC', sans-serif, Arial;
 }
 
-#topBar a:hover {
+#topNavBar .navBarButton:link, #topNavBar .navBarButton:visited {
+    color: initial;
+}
+
+#topNavBar .navBarButton:hover {
     color: #888;
 }
 
-#topBar a:link, #topBar a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-#topBar {
+#topNavBar {
     z-index: 100;
     position: fixed;
     background-color: #C5E2FC;

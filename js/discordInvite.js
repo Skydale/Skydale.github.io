@@ -3,16 +3,10 @@ var discordInvite = discordInvite || function () {
         e = "1.0";
     return {
         init: function (e) {
-            e.inviteCode = void 0 !== e.inviteCode && e.inviteCode, e.title = void 0 !== e.title ? e.title : "", e.introText = void 0 !== e.introText ? e.introText : "YOU'VE BEEN INVITED TO JOIN A SERVER", e.joinText = void 0 !== e.joinText ? e.joinText : "Join", e.joinedText = void 0 !== e.joinedText ? e.joinedText : "Joined", e.width = void 0 !== e.width ? e.width : 420, e.miniMode = void 0 !== e.miniMode && e.miniMode, e.hideIntro = void 0 !== e.hideIntro && e.hideIntro, e.targetElement = void 0 !== e.targetElement ? e.targetElement : "#discordInviteBox", i.inviteCode = e.inviteCode, i.title = e.title, i.introText = e.introText, i.joinText = e.joinText, i.joinedText = e.joinedText, i.miniMode = e.miniMode, i.hideIntro = e.hideIntro, i.width = e.width, i.targetElement = e.targetElement
+            e.inviteCode = void 0 !== e.inviteCode && e.inviteCode, e.title = void 0 !== e.title ? e.title : "", e.introText = void 0 !== e.introText ? e.introText : "YOU'VE BEEN INVITED TO JOIN A SERVER", e.joinText = void 0 !== e.joinText ? e.joinText : "Join", e.joinedText = void 0 !== e.joinedText ? e.joinedText : "Joined", e.width = void 0 !== e.width ? e.width : 400, e.miniMode = void 0 !== e.miniMode && e.miniMode, e.hideIntro = void 0 !== e.hideIntro && e.hideIntro, e.targetElement = void 0 !== e.targetElement ? e.targetElement : "#discordInviteBox", i.inviteCode = e.inviteCode, i.title = e.title, i.introText = e.introText, i.joinText = e.joinText, i.joinedText = e.joinedText, i.miniMode = e.miniMode, i.hideIntro = e.hideIntro, i.width = e.width, i.targetElement = e.targetElement
         },
         render: function () {
             if (window.jQuery) d();
-            else {
-                var t = document.createElement("script");
-                t.type = "text/javascript", t.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", document.head.appendChild(t), t.onload = function () {
-                    d()
-                }
-            }
 
             function d() {
                 if (discordCode = i.inviteCode, discordCode && "" != discordCode) {
@@ -26,7 +20,7 @@ var discordInvite = discordInvite || function () {
                             var t = e.approximate_member_count + " 位成員",
                                 o = e.approximate_presence_count + " 位上線",
                                 n = e.guild.name,
-                                r = "https://cdn.discordapp.com/icons/" + e.guild.id + "/" + e.guild.icon + ".png?size=64";
+                                r = "https://cdn.discordapp.com/icons/" + e.guild.id + "/" + e.guild.icon + ".jpg";
                             $("#serverName").html(n), $("#serverImg").css("background-image", "url(" + r + ")"), $("#numTotal").html(t), $("#numOnline").html(o), $(".discordLink").click(function () {
                                 $("#callToAction").html(d).attr("id", "callToAction-clicked"), url = "https://discordapp.com/invite/" + i.inviteCode, window.open(url, "_blank")
                             }), $(".loadHidden").show(), i.miniMode && $("#offlineInd, #numTotal").hide(), i.hideIntro && $("#introText").hide()

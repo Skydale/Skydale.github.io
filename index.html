@@ -27,9 +27,8 @@
   <meta name="theme-color" content="#8FE1FF">
 
   <!-- js -->
-  <script src="./js/discordInvite.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -37,31 +36,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="./js/discordInvite.js" charset="utf-8"></script>
 
 </head>
 
 <body>
-  <script>
-    discordInvite.init({
-      inviteCode: '5vwGqnNjYy',
-      title: "凌空群島 / Skydale",
-      introText: "加入我們的 Discord 群組！",
-      joinText: "加入",
-      joinedText: "已加入"
-    });
-    discordInvite.render();
-  </script>
-
-  <script>
-    window.onload = function () {
-      document.getElementById("descLogo").style.left = "0%";
-      document.getElementById("descText").style.left = "0%";
-      document.getElementById("discordLogo").style.right = "0%";
-      document.getElementById("discordInviteBox").style.right = "0%";
-    }
-  </script>
-  <nav id="topBar">
-    <a href="https://github.com/Skydale">Github 頁面</a>
+  <nav id="topNavBar">
+    <a class="navBarButton" href="https://github.com/Skydale">Github 頁面</a>
   </nav>
   <div>
     <div id="desc">
@@ -106,6 +87,25 @@
       <br><br><br>
     </div>
   </div>
+  <script>
+    discordInvite.init({
+      inviteCode: '5vwGqnNjYy',
+      title: "凌空群島 / Skydale",
+      introText: "加入我們的 Discord 群組！",
+      joinText: "加入",
+      joinedText: "已加入",
+      width: 420
+    });
+    discordInvite.render();
+  </script>
+  <script>
+    window.onload = function () {
+      document.getElementById("descLogo").style.left = "0%";
+      document.getElementById("descText").style.left = "0%";
+      document.getElementById("discordLogo").style.right = "0%";
+      document.getElementById("discordInviteBox").style.right = "0%";
+    }
+  </script>
 </body>
 
 </html>
