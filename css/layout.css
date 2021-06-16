@@ -56,7 +56,7 @@ body {
 }
 
 #discordLogo {
-    background: url(https://cdn.skydale.tk/images/discord.svg) no-repeat;
+    background: url(https://cdn.skydale.tk/images/discord.png) no-repeat;
     top: 50%;
     transform: translateY(-50%);
     position: relative;
